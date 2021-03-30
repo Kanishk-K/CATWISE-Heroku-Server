@@ -1,0 +1,5 @@
+django
+django-import-export
+django-filter
+django-queryset-csv
+gunicorn
