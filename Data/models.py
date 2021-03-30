@@ -4,7 +4,7 @@ import decimal
 
 # Create your models here.
 class CatWise(models.Model):
-    RaDEC = models.CharField(max_length=35)
+    RaDEC = models.CharField(max_length=50)
     RA = models.DecimalField(max_digits=15,decimal_places=9)
     DEC = models.DecimalField(max_digits=15,decimal_places=9)
     FoundInSearch = models.CharField(max_length=100)
@@ -26,15 +26,15 @@ class CatWise(models.Model):
     GaiaDR2PlxErr = models.DecimalField(max_digits=11,decimal_places=6,blank=True,null=True)
     SIMBAD = models.BooleanField()
 
-    BYW = models.CharField(max_length=30,blank=True,null=True)
+    BYW = models.CharField(max_length=50,blank=True,null=True)
     GaiaCoMover = models.BooleanField(blank=True,null=True)
-    OnSpitzerPrg = models.CharField(max_length=30, blank=True,null=True)
+    OnSpitzerPrg = models.CharField(max_length=50, blank=True,null=True)
 
     JMag = models.DecimalField(max_digits=11,decimal_places=6,blank=True,null=True)
     JMagErr = models.DecimalField(max_digits=11,decimal_places=6,blank=True,null=True)
-    JMagSrc = models.CharField(max_length=30,blank=True,null=True)
-    CatWISESpec = models.CharField(max_length=30,blank=True,null=True)
-    CatWISESpecSrc = models.CharField(max_length=30,blank=True,null=True)
+    JMagSrc = models.CharField(max_length=50,blank=True,null=True)
+    CatWISESpec = models.CharField(max_length=50,blank=True,null=True)
+    CatWISESpecSrc = models.CharField(max_length=50,blank=True,null=True)
     SpizerConsider = models.BooleanField(blank=True,null=True)
 
     VTan = models.DecimalField(max_digits=18,decimal_places=10,blank=True,null=True)
