@@ -6,7 +6,6 @@ class CatWiseResource(resources.ModelResource):
     class Meta:
         model = CatWise
         exclude = (
-            'id',
             'VTan',
             'W1W2Diff',
             'W1W2DiffErr',
@@ -19,6 +18,7 @@ class CatWiseResource(resources.ModelResource):
             'created_at',
         )
         import_id_fields=[
+            'id'
             'RaDEC',
             'RA',
             'DEC',
