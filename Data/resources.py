@@ -18,12 +18,5 @@ class CatWiseResource(resources.ModelResource):
             'created_at',
         )
         import_id_fields=[
-            'id',
-            'RaDEC',
-            'RA',
-            'DEC',
-            'FoundInSearch',
-            'w1mpro',
-            'w2mpro',
-            'SIMBAD'
+            'id'
         ]
