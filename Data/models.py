@@ -7,7 +7,7 @@ class CatWise(models.Model):
     RaDEC = models.CharField(max_length=35)
     RA = models.DecimalField(max_digits=15,decimal_places=9)
     DEC = models.DecimalField(max_digits=15,decimal_places=9)
-    FoundInSearch = models.CharField(max_length=50)
+    FoundInSearch = models.CharField(max_length=100)
     AddDate = models.DateField(blank=True,null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
